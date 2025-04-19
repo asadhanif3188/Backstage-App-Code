@@ -11,4 +11,4 @@ yarn start
 
 ## Few Screenshots
 
-<img scr="screenshots/1.front-page.png" />
+<img src="screenshots/1.front-page.png" width="80%" />
