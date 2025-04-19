@@ -8,3 +8,7 @@ To start the app, run:
 yarn install
 yarn start
 ```
+
+## Few Screenshots
+
+<img scr="screenshots/1.front-page.png" />
