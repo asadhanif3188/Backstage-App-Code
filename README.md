@@ -11,8 +11,9 @@ yarn start
 
 ## Few Screenshots
 
-<img src="screenshots/1.front-page.png" width="80%" />
+<img src="screenshots/1.front-page.png" width="90%" />
 <br>
-<img src="screenshots/2.github-popup.png" width="80%" />
+<img src="screenshots/2.github-popup.png" width="90%" />
 <br>
-
+<img src="screenshots/3.components-page.png" width="90%" />
+<br>
