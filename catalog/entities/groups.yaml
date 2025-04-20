@@ -6,9 +6,7 @@ metadata:
 spec:
   type: team
   profile:
-    displayName: Development
+    # Intentional no displayName for testing
     email: development@example.com
-    picture: https://example.com/groups/bu-infrastructure.jpeg
-  # parent: ops
-  # children: [backstage, other]
-  # members: [asadhanif3188]
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  children: []
