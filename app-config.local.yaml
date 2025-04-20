@@ -21,14 +21,23 @@ auth:
 
 catalog:
   rules:
-    - allow: [Group, User, Component, System, API, Resource, Location]
+    - allow: [Component, System, API, Resource, Location]
   locations:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
       target: /app/backstage/catalog/entities/users.yaml
+      rules: 
+        - allow: [User]
 
     - type: file
       target: /app/backstage/catalog/entities/groups.yaml
+      rules: 
+        - allow: [Group]
+
+    - type: url
+      target: https://github.com/asadhanif3188-mlops/backstage-software-templates/blob/main/python-app/template.yaml
+      rules: 
+        - allow: [Template]
 
 techdocs:
   builder: 'local'
