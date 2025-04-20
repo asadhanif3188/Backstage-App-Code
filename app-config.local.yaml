@@ -30,3 +30,9 @@ catalog:
     - type: file
       target: /app/backstage/catalog/entities/groups.yaml
 
+techdocs:
+  builder: 'local'
+  publisher:
+    type: 'local'
+  generator:
+    runIn: local
