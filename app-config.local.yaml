@@ -21,9 +21,12 @@ auth:
 
 catalog:
   rules:
-    - allow: [User, Component, System, API, Resource, Location]
+    - allow: [Group, User, Component, System, API, Resource, Location]
   locations:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
       target: /app/backstage/catalog/entities/users.yaml
+
+    - type: file
+      target: /app/backstage/catalog/entities/groups.yaml
 
