@@ -14569,6 +14569,7 @@ __metadata:
     "@backstage/plugin-proxy-backend": "npm:^0.6.1"
     "@backstage/plugin-scaffolder-backend": "npm:^1.32.0"
     "@backstage/plugin-scaffolder-backend-module-github": "npm:^0.7.0"
+    "@backstage/plugin-scaffolder-backend-module-gitlab": "npm:^0.9.0"
     "@backstage/plugin-search-backend": "npm:^2.0.1"
     "@backstage/plugin-search-backend-module-catalog": "npm:^0.3.3"
     "@backstage/plugin-search-backend-module-pg": "npm:^0.5.43"
