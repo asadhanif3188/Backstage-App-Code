@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: development
+  description: This group belongs to development team.
+spec:
+  type: team
+  profile:
+    displayName: Development
+    email: development@example.com
+    picture: https://example.com/groups/bu-infrastructure.jpeg
+  # parent: ops
+  # children: [backstage, other]
+  # members: [asadhanif3188]
