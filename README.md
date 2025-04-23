@@ -45,3 +45,12 @@ Following command can spin up a postgres container.
 docker run -d --name backstage-postgres -e POSTGRES_USER=backstage -e POSTGRES_PASSWORD=backstage -e POSTGRES_DB=backstage -e PGDATA=/var/lib/postgresql/data/pgdata -v /home/ubuntu/psql:/var/lib/postgresql/data postgres:16
 ```
 
+
+
+## Building Production Grade Docker Image for Backtage
+
+**Ref:** `https://backstage.io/docs/deployment/docker`
+
+Command to build the Backend for Production
+`yarn build:backend --config ../../app-config.yaml  --config ../../app-config.production.yaml`
+
