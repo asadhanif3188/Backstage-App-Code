@@ -37,3 +37,11 @@ export PATH="$VIRTUAL_ENV/bin:$PATH"
 pip3 install mkdocs-techdocs-core
 ```
 
+## Postgres DB for Backstage
+
+Following command can spin up a postgres container.
+
+```
+docker run -d --name backstage-postgres -e POSTGRES_USER=backstage -e POSTGRES_PASSWORD=backstage -e POSTGRES_DB=backstage -e PGDATA=/var/lib/postgresql/data/pgdata -v /home/ubuntu/psql:/var/lib/postgresql/data postgres:16
+```
+
