@@ -10,6 +10,10 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     apt-get install -y --no-install-recommends python3 python3-pip python3-venv g++ build-essential && \
     rm -rf /var/lib/apt/lists/*
 
+ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+RUN pip3 install mkdocs-techdocs-core
 
 # From here on we use the least-privileged `node` user to run the backend.
 USER node
@@ -42,8 +46,6 @@ RUN --mount=type=cache,target=/home/node/.cache/yarn,sharing=locked,uid=1000,gid
 # Then copy the rest of the backend bundle, along with any other files we might want.
 COPY --chown=node:node packages/backend/dist/bundle.tar.gz app-config*.yaml ./
 RUN tar xzf bundle.tar.gz && rm bundle.tar.gz
-
-RUN pip3 install mkdocs-techdocs-core
 
 COPY --chown=node:node ./catalog .
 
